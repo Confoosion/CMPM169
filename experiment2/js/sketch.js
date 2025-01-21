@@ -1,6 +1,6 @@
 // sketch.js - purpose and description here
-// Author: Jake Sales
-// Date: 1/20/25
+// Author: Your Name
+// Date:
 
 // Here is how you might set up an OOP p5.js project
 // Note that p5.js looks for a file called sketch.js
@@ -15,11 +15,6 @@ let myInstance;
 let canvasContainer;
 var centerHorz, centerVert;
 
-let simulatedMouseX;
-let simulatedMouseY;
-let speedX = 2; // Speed of horizontal movement
-let speedY = 1.5; // Speed of vertical movement
-
 class MyClass {
     constructor(param1, param2) {
         this.property1 = param1;
@@ -28,34 +23,6 @@ class MyClass {
 
     myMethod() {
         // code to run when method is called
-        background(255);
-        translate(width / 2, height / 2);
-
-        // Update simulated mouse positions
-        simulatedMouseX += speedX;
-        simulatedMouseY += speedY;
-
-        // Reverse direction when hitting canvas edges
-        if (simulatedMouseX > width || simulatedMouseX < 0) speedX *= -1;
-        if (simulatedMouseY > height || simulatedMouseY < 0) speedY *= -1;
-
-        var circleResolution = int(map(simulatedMouseY, 0, height, 2, 80));
-        var radius = simulatedMouseX - width / 2;
-        var angle = TAU / circleResolution;
-
-        strokeWeight(simulatedMouseY / 20);
-
-        for (var i = 0; i <= circleResolution; i++) {
-          // Randomize colors for each line
-          let r = random(255);
-          let g = random(255);
-          let b = random(255);
-          stroke(r, g, b);
-
-          var x = cos(angle * i) * radius;
-          var y = sin(angle * i) * radius;
-          line(0, 0, x, y);
-        }
     }
 }
 
