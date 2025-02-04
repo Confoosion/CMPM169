@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 3 - Images, Video, & Sound Art</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -19,6 +19,8 @@
         crossorigin="anonymous"></script>
 	<!-- Load p5.js library -->
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+	<script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.dom.min.js></script>
+    <script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.sound.min.js></script>
 
 	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
     <script type="text/javascript" src="../js/site.js" DEFER></script>
@@ -32,7 +34,7 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 3 - Images, Video, & Sound Art <strong>[CLICK SCREEN TO HEAR SOUND]</strong></h1>
 
 			<div class="minor-section">
 				<div id="canvas-container">
@@ -45,17 +47,35 @@
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>In this experiment, I wanted the user experiences a unique sound that almost sounds
+				   magical, as if the user were in a cavern full of crystals. The user is free to create
+				   more balls to bounce around the screen and generate more sound. I think it's very
+				   interesting to hear the unique melodies and sounds this experiment can generate because
+				   it feels like something new can be heard every time.
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>The moving tiles were made with a p5 rectangle, and it moves in a cosine pattern.
+				   The ball checks for collision with those tiles, and whenever a collision happens, the
+				   sound gets created. Once a ball bounces off of a tile 3 times, it disappears, so the
+				   user is encouraged to create more balls by left clicking. The sound itself was pretty
+				   cool to make because it uses an oscillator and an envelope, along with some reverb to
+				   make it sound more like it's in a cave.
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>I worked alone on this, so I did everything. It was fun to mess around with sound in p5.js
+				   because I didn't know any of this stuff existed, so I was messing around with what kinds of
+				   sounds I could make. Starting with a few piano tiles was very helpful to get this experiment
+				   moving forward. There were also a lot of difficulties throughout the experiment such as sound
+				   not sounding nice enough, or the ball glitching into the line and causing the sound to crunch
+				   and eventually crash the program. I'm pretty sure a bug still happens where too many balls will
+				   crash the program, but I've only encountered it once... so far.
+				</p>
 			</div>
 
 		</section>
