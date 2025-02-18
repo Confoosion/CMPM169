@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 5 - Text Art & Grammars</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+	<script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.dom.min.js></script>
+    <script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.sound.min.js></script>
+	<!-- Opentype -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/0.7.3/opentype.min.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" DEFER></script>
+	<!-- Use me for a JavaScript OOP Project -->
+	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<!-- Use me for a p5.js project -->
+	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 5 - Text Art & Grammars
+
+			<div class="minor-section">
+				<div id="canvas-container">
+					<!-- canvas will be added here -->
+				</div>
+                <div class="fullscreen-box">
+                    <button id="fullscreen">Fullscreen</button>
+                </div>
+			</div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>In this experiment, I wanted to make something that people might want to use if they were
+				   to create a design for a shirt or hoodie. Making a cool design for a word/phrase/name can be automated
+				   in this experiment and it was heavily inspired by stuff like graffiti and the designs you might
+				   see on shirts and hoodies.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>The experiment basically makes a letter the moment it is typed, and when the cursor is hovered
+				   over the original line of the letter, it adds a new line that gets expanded and slightly changes
+				   its shape from the original letter lines. The way it changes color is simply just iterating through
+				   a list of colors, and more colors can be added if the user wanted.
+				</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>I worked alone on this, so I did everything. My original idea was very different from the finished
+				   experiment, but I am still happy with the end result. Originally, I was taking inspiration from
+				   puzzle designs, and how some hidden text can be represented like how iMessage has a hidden text feature.
+				   However, overtime my ideas shifted more towards graffiti and to designs that skaters might have on
+				   their shirts or hoodies, which I thought would be cool to create automatically.
+				</p>
+			</div>
+
+		</section>
+		<nav id="links" class="minor-section">
+			<!-- Put link back to homepage here. -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+		</nav>
+	</main>
+</body>
+</html>
